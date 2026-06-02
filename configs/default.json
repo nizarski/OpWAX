@@ -1,0 +1,81 @@
+{
+  "version": 1,
+  "targets": {
+    "user_mode": "current",
+    "selected_users": [],
+    "drive_mode": "system",
+    "selected_drives": []
+  },
+  "options": {
+    "reboot_after": false,
+    "wlan_mode": "except_current",
+    "manifest_diff": true,
+    "post_run_verification": true,
+    "focused_cleanup_mode": false,
+    "second_pass_after_reboot": false,
+    "mft_free_space_scrub": false,
+    "logfile_reset_on_reboot": false,
+    "lsass_scrub": true,
+    "lsass_reboot_after": false,
+    "advanced": {
+      "delete_vss_shadows": false,
+      "full_volume_unallocated": false,
+      "wipe_file_slack": false,
+      "wipe_file_slack_all_files": false,
+      "scrub_bad_clusters": false,
+      "onedrive": "off",
+      "cloud_sync": "off",
+      "wmi": "off",
+      "scheduled_tasks": "off",
+      "bits": "off",
+      "alternate_run_keys": "off",
+      "powershell_history": true,
+      "timeline_activity": true,
+      "rdp_cache": "off",
+      "userassist": true,
+      "hyperv": "off",
+      "wsl": "off",
+      "windows_recall": true,
+      "pca_appcompat_logs": true,
+      "notepad_tab_cache": true,
+      "office_trust_records": true,
+      "sysinternals_eula": true,
+      "outlook": "off",
+      "teams": "off",
+      "windows_search_index": true,
+      "shell_icon_caches": true,
+      "execution_registries": true,
+      "syscache_hive": true,
+      "event_transcript": true,
+      "wer_reports": true,
+      "targeted_event_channels": true,
+      "servicing_logs": false,
+      "print_spooler": false,
+      "developer_traces": false,
+      "delivery_optimization": false,
+      "smartscreen_cache": false
+    },
+    "browsers": {
+      "edge": true,
+      "chrome": true,
+      "firefox": true
+    }
+  },
+  "modules": {
+    "volatile_memory": true,
+    "registry_hives": true,
+    "ntfs_metadata": true,
+    "program_execution": true,
+    "system_logs": true,
+    "persistence_storage": false,
+    "network_browser": true
+  },
+  "schedule": {
+    "enabled": false,
+    "mode": "daily",
+    "time": "02:00",
+    "day_of_week": 0,
+    "day_of_month": 1,
+    "config_path": ""
+  }
+}
